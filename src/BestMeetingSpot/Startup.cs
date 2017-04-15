@@ -26,7 +26,7 @@ namespace BestMeetingSpot
 					Contact = new Contact() { Name = "Juan Cruz Montes", Email = "jcmontes95@gmail.com" }
 				});
 			});
-			services.AddSingleton<IGoogleMapsService>(x => new GoogleMapsService());
+			services.AddScoped<IGoogleMapsService>(x => new GoogleMapsService());
 		}
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
